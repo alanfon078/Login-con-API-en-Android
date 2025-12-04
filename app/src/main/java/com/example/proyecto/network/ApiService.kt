@@ -43,10 +43,10 @@ data class User(
 
 
 //APIIIIIIIIII
-private const val BASE_URL_MIAPI = "https://49819bf01725.ngrok-free.app"
+private const val BASE_URL_MIAPI = "https://c3a7cfeb1a6a.ngrok-free.app"
 
 private val retrofit = Retrofit.Builder()
-    // El conertidor ignora las llaves desconocidas que vengan en el JSON
+    // El convertidor ignora las llaves desconocidas que vengan en el JSON
     .addConverterFactory(Json { ignoreUnknownKeys = true }.asConverterFactory("application/json".toMediaType()))
     .baseUrl(BASE_URL_MIAPI)
     .build()
